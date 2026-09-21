@@ -3,249 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مقاول ترميم بالرياض - أفضل شركة ترميم مباني وتشطيب</title>
-    <!-- استدعاء خط FontAwesome للأيقونات -->
+    <title>مقاول ترميم بالرياض | أفضل شركة ترميمات عامة وتشطيب مباني</title>
+    <meta name="description" content="أفضل مقاول ترميم بالرياض متخصص في ترميم الفلل، الشقق، واجهات المباني، وعزل الأسطح. خدمات ترميم وتشطيب شاملة بأعلى جودة وضمان. اتصل الآن 0580586124">
+    <!-- استدعاء خطوط وأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #0f172a;
-            --accent-color: #2563eb;
+            --primary-color: #0f172a; /* لون غامق */
+            --accent-color: #2563eb;  /* لون أزرق رئيسي */
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-white: #ffffff;
+            --bg-alt: #f8fafc;
             --whatsapp-color: #25d366;
             --call-color: #0284c7;
-            --bg-light: #f8fafc;
-            --text-color: #334155;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-color);
-            line-height: 1.8;
-            padding-bottom: 80px; /* مساحة للأزرار العائمة */
-        }
-        /* الهيدر */
-        header {
-            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1400&auto=format&fit=crop') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        /* الشعار: صورة معمارية تحتوي على الرقم */
-        .logo-img {
-            width: 160px;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border: 3px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto 20px auto;
-        }
-        .btn-main {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-            display: inline-block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
-        .btn-main:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-2px);
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 30px 20px;
-        }
-        .section {
-            background: white;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .section h2 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            border-right: 4px solid var(--accent-color);
-            padding-right: 10px;
-            font-size: 1.6rem;
-        }
-        .section p {
-            margin-bottom: 12px;
-            color: #475569;
-            font-size: 0.95rem;
-        }
-        /* تنسيق الصور داخل الأقسام */
-        .section-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #e2e8f0;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .feature-box {
-            background: #f1f5f9;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid #e2e8f0;
-        }
-        .feature-box i {
-            font-size: 2rem;
-            color: var(--accent-color);
-            margin-bottom: 10px;
-        }
-        .faq-item {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        .faq-item h3 {
-            color: var(--primary-color);
-            font-size: 1rem;
-            margin-bottom: 5px;
-        }
-        .faq-item p {
-            font-size: 0.9rem;
         }
 
-        /* الأزرار العائمة - تم إصلاحها وإظهارها */
-        @keyframes arousing {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+        body { background-color: var(--bg-alt); color: var(--text-dark); line-height: 1.6; overflow-x: hidden; }
+
+        /* استيراد خط عربي جميل */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        /* ==============================
+           شريط الاتصال الثابت العلوي
+           ============================== */
+        .top-bar {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+        .top-bar-info span { margin-left: 15px; font-size: 0.9rem; }
+        .top-bar-info i { color: var(--accent-color); margin-left: 5px; }
+        .top-bar-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .top-bar-btn:hover { background-color: #1d4ed8; }
+
+        /* ==============================
+           الهيدر والشعار
+           ============================== */
+        header {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1400&auto=format&fit=crop') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 160px 20px 80px; /* مساحة لشريط الاتصال العلوي */
+            margin-bottom: 40px;
+        }
+        .logo-container {
+            background: white;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 4px solid white;
+            overflow: hidden;
+        }
+        .logo-container img { width: 80%; height: auto; } /* افتراض أن الشعار صورة */
+        
+        /* إذا كان الشعار نصاً بدلاً من صورة، استخدم هذا الـ CSS بدلاً من السابق */
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-shadow: none;
+        }
+        .logo-text span { color: var(--accent-color); }
+
+        header h1 { font-size: 2.8rem; margin-bottom: 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 25px; color: #e2e8f0; }
+        .header-cta {
+            background-color: var(--whatsapp-color);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+            display: inline-flex;
+            align-items: center;
+        }
+        .header-cta i { margin-left: 10px; font-size: 1.3rem; }
+        .header-cta:hover { transform: translateY(-3px); }
+
+        /* ==============================
+           الأقسام العامة
+           ============================== */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .main-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px; color: var(--primary-color); }
+        .subtitle { text-align: center; color: var(--text-light); margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;}
+
+        .section { background: var(--bg-white); border-radius: 12px; padding: 40px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .section-grid.reverse { direction: ltr; }
+        .section-grid.reverse > * { direction: rtl; }
+
+        .section h2 { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px; position: relative; padding-right: 15px; }
+        .section h2::before { content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 5px; height: 25px; background-color: var(--accent-color); border-radius: 3px; }
+        .section p { color: var(--text-dark); margin-bottom: 15px; font-size: 1rem; }
+        .section ul { margin-right: 20px; margin-bottom: 15px; color: var(--text-dark); }
+        .section li { margin-bottom: 8px; }
+
+        .img-placeholder { background-color: #e2e8f0; border-radius: 12px; width: 100%; height: 300px; object-fit: cover; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+        /* ==============================
+           الأزرار العائمة (واتساب + اتصال)
+           ============================== */
+        @keyframes float-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        @keyframes call-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(2, 132, 199, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
+        }
+
         .float-btn {
             position: fixed;
-            bottom: 25px;
-            width: 65px;
-            height: 65px;
+            bottom: 30px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-            z-index: 9999; /* ضمان ظهورها فوق كل شيء */
-            transition: transform 0.3s;
-            animation: arousing 2s infinite;
+            color: white;
+            font-size: 2.5rem;
+            z-index: 999;
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
         }
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
-        /* واتساب على اليمين */
+        .float-btn:hover { transform: scale(1.1); }
+
         .float-whatsapp {
-            right: 25px;
+            right: 30px;
             background-color: var(--whatsapp-color);
-            color: white;
+            animation: float-pulse 2s infinite;
         }
-        /* اتصال على اليسار */
         .float-call {
-            left: 25px;
+            left: 30px;
             background-color: var(--call-color);
-            color: white;
+            animation: call-pulse 2s infinite;
         }
 
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        /* ==============================
+           تذييل الصفحة
+           ============================== */
+        footer { background-color: var(--primary-color); color: #94a3b8; padding: 50px 20px; text-align: center; }
+        footer .logo-text { font-size: 2rem; color: white; margin-bottom: 15px; }
+        footer p { max-width: 500px; margin: 0 auto 20px; font-size: 0.9rem; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #cbd5e1; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--accent-color); }
+
+        /* ==============================
+           تجاوب الشاشات (Mobile Responsiveness)
+           ============================== */
+        @media (max-width: 768px) {
+            header { padding: 140px 15px 60px; }
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
+            .main-title { font-size: 1.8rem; }
+            .section-grid { grid-template-columns: 1fr; gap: 20px; }
+            .section-grid.reverse { direction: rtl; } /* إلغاء الـ LTR في الموبايل */
+            .section { padding: 25px; }
+            .img-placeholder { height: 200px; }
+            .float-btn { width: 55px; height: 55px; font-size: 2rem; bottom: 20px; }
+            .float-whatsapp { right: 15px; }
+            .float-call { left: 15px; }
+            .top-bar { padding: 8px 10px; font-size: 0.8rem; }
+            .top-bar-info span { margin-left: 5px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- رأس الصفحة -->
+    <!-- شريط الاتصال العلوي الثابت -->
+    <div class="top-bar">
+        <div class="top-bar-info">
+            <span><i class="fas fa-phone-alt"></i> 0580586124</span>
+            <span class="hide-mobile"><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</span>
+        </div>
+        <a href="tel:0580586124" class="top-bar-btn">اتصل بنا الآن</a>
+    </div>
+
+    <!-- الهيدر الرئيسي -->
     <header>
-        <!-- الشعار: صورة معمارية تحتوي على الرقم -->
-        <img src="https://i.imgur.com/311L9bY.png" alt="مقاول ترميم بالرياض 0580586124" class="logo-img">
-        <h1>مقاول ترميم بالرياض - شركة بناء وتشطيب</h1>
-        <p>أفضل خدمات ترميم الفلل، الشقق، وعزل الأسطح بأحدث التقنيات وبإشراف هندسي معتمد.</p>
-        <a href="tel:0580586124" class="btn-main">اتصل بنا الآن: 0580586124</a>
+        <div class="container">
+            <div class="logo-container">
+                <!-- استبدل رابط الصورة أدناه برابط شعار شركتك الفعلي -->
+                <img src="https://cdn-icons-png.flaticon.com/512/3163/3163822.png" alt="شعار شركة مقاولات">
+                <!-- بديل نصي للشعار لو مافي صورة: <div class="logo-text">ترميم<span>الرياض</span></div> -->
+            </div>
+            <h1>مقاول ترميم بالرياض معتمد</h1>
+            <p>هل تبحث عن أفضل مقاول ترميم بالرياض؟ نحن شركة متخصصة في ترميم المباني، الفلل، الشقق، وعزل الأسطح بأعلى معايير الجودة وبأيدي مهندسين وفنيين محترفين. أسعار تنافسية وضمان شامل.</p>
+            <a href="https://wa.me/966580586124" class="header-cta" target="_blank">
+                احصل على استشارة مجانية <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
     </header>
 
     <div class="container">
+        <h2 class="main-title">خدماتنا الاحترافية في ترميم وتجديد المباني</h2>
+        <p class="subtitle">نقدم حلولاً شاملة ومتكاملة لإعادة الحياة لعقارك، بدءاً من الأساسات وحتى التشطيبات النهائية.</p>
 
-        <!-- القسم 1 -->
-        <section class="section" id="section1">
-            <h2>1. من نحن - أفضل شركة ترميمات عامة بالرياض</h2>
-            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop" alt="ترميم مباني الرياض" class="section-img">
-            <p>نحن مؤسسة رائدة متخصصة في أعمال <strong>الترميم والتشطيب بالرياض</strong>، بخبرة تتجاوز 10 سنوات في إعادة إحياء المباني القديمة والحديثة. نقدم حلولاً هندسية متكاملة لكافة المشاكل الإنشائية.</p>
-            <p>فريقنا الفني والهندسي يعمل جاهداً لتقديم أعلى معايير الجودة في التنفيذ، بدءاً من المعاينة الدقيقة ووضع التصاميم، مروراً بمراحل التنفيذ المختلفة، وحتى التسليم النهائي مع ضمان شامل.</p>
-            <p>هدفنا هو كسب ثقة عملائنا من خلال الالتزام بالمواعيد، الدقة في العمل، والأسعار التنافسية التي تناسب الجميع في مدينة الرياض. لا تتردد في طلب استشارتك المجانية.</p>
-            <p>نحن نستخدم أجود مواد البناء والعزل المعتمدة من قبل الجهات الرسمية في المملكة لضمان بقاء الترميم لسنوات طويلة دون أي مشاكل.</p>
-        </section>
-
-        <!-- القسم 2 -->
-        <section class="section" id="section2">
-            <h2>2. ترميم فلل وقصور وعمائر</h2>
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" alt="ترميم فلل الرياض" class="section-img">
-            <p>نقدم خدمات متخصصة في <strong>ترميم الفلل بالرياض</strong> والقصور، تشمل معالجة التصدعات، تجديد الواجهات الخارجية، وإعادة تقسيم الفراحات الداخلية لتلبية احتياجات العصر الحديث.</p>
-            <p>نقوم بفك وإعادة تركيب الأرضيات، أعمال اللياسة، والدهانات بأجود الأنواع. كما نضمن سلامة الهيكل الإنشائي للمبنى بعد الترميم ليعيش لسنوات طويلة إضافية.</p>
-            <p>نعمل بإشراف هندسي كامل لضمان مطابقة الأعمال للمواصفات الفنية والهندسية المعتمدة في المملكة العربية السعودية. فريقنا مدرب على التعامل مع أفخم أنواع التشطيبات.</p>
-            <p>سواء كنت ترغب في تحديث فيلا بالكامل أو إجراء تعديلات جزئية، فإننا نقدم الحلول الأنسب لميزانيتك ورغبتك.</p>
-        </section>
-
-        <!-- القسم 3 -->
-        <section class="section" id="section3">
-            <h2>3. تشطيب داخلي وخارجي للشقق والمكاتب</h2>
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop" alt="تشطيب شقق الرياض" class="section-img">
-            <p>نتميز في أعمال <strong>التشطيب بالرياض</strong> للشقق السكنية، المكاتب، والمحلات التجارية. بدءاً من أعمال الجبس بورد، الأسقف المستعارة، الإضاءات الحديثة، وحتى الأرضيات والدهانات.</p>
-            <p>نوفر كتالوجات لأحدث صيحات الديكور العالمية وننفذها بدقة متناهية. كما نقوم بتركيب الأبواب والنوافذ والألمنيوم بجودة عالية.</p>
-            <p>سواء كنت تبحث عن تشطيب كلاسيكي أو مودرن، فإن فريقنا مستعد لتحويل رؤيتك إلى واقع ملموس بأفضل الأسعار. نضمن لك استخدام دهانات صديقة للبيئة وعالية التحمل.</p>
-            <p>التشطيب هو واجهة عقارك، ونحن نحرص على أن تكون هذه الواجهة مشرفة ومبهرة لكل من يراها.</p>
-        </section>
-
-        <!-- القسم 4 -->
-        <section class="section" id="section4">
-            <h2>4. عزل أسطح وخزانات مائية</h2>
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop" alt="عزل أسطح الرياض" class="section-img">
-            <p>نقدم حلولاً فعالة لمشاكل تسربات المياه في <strong>عزل الأسطح بالرياض</strong>، باستخدام أفضل مواد العزل المائي والحراري (مثل الفوم والرولات البيتومينية) لحماية المبنى من الأمطار وحرارة الشمس.</p>
-            <p>كما نقوم بـ <strong>عزل خزانات المياه</strong> الأرضية والعلوية لضمان سلامة ونقاء المياه ومنع التسربات التي قد تضر بأساسات المنزل.</p>
-            <p>نقدم ضمانات موثوقة على كافة أعمال العزل لضمان راحة بالك وحماية عقارك لسنوات طويلة. فريقنا يستخدم أحدث أجهزة كشف التسربات.</p>
-            <p>لا تتهاون في مشكلة التسربات، فهي قد تدمر أساسات المبنى. اتصل بنا فوراً للحصول على حل جذري.</p>
-        </section>
-
-        <!-- القسم 5 -->
-        <section class="section" id="section5">
-            <h2>5. معالجة الشروخ والتصدعات</h2>
-            <img src="https://images.unsplash.com/photo-1581094482909-5c4f723a9845?q=80&w=1000&auto=format&fit=crop" alt="معالجة الشروخ الرياض" class="section-img">
-            <p>تعتبر الشروخ والتصدعات من أخطر المشاكل التي تهدد سلامة المباني. نستخدم في شركتنا أفضل التقنيات لـ <strong>معالجة الشروخ الإنشائية والشعرية بالرياض</strong>.</p>
-            <p>يقوم مهندسونا بتحديد نوع الشرخ وسببه، ثم اختيار طريقة المعالجة المناسبة (مثل الحقن بمواد الإيبوكسي أو استخدام الألياف الكربونية) لاستعادة القوة الإنشائية للمبنى.</p>
-            <p>لا تتردد في الاتصال بنا عند ملاحظة أي تشققات في الجدران أو الأسقف للحصول على استشارة فورية وحل جذري للمشكلة قبل تفاقمها.</p>
-            <p>معالجة الشروخ تتطلب خبرة ودقة، ونحن نوفر لك أفضل المهندسين والفنيين لهذا الغرض.</p>
-        </section>
-
-        <!-- القسم 6 -->
-        <section class="section" id="section6">
-            <h2>6. تجديد السباكة والكهرباء</h2>
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop" alt="سباكة وكهرباء الرياض" class="section-img">
-            <p>نقوم بـ <strong>تجديد شبكات السباكة والكهرباء بالرياض</strong> للمباني القديمة والحديث
+        <!-- القسم الأول: ترميم الفلل -->
+        <section class="section" id="section-villa">
+            <div class="section-grid">
+                <div>
+                    <h2>1. ترميم فلل وقصور بالرياض - تحديث شامل وعصري</h2>
+                    <p>نحن ندرك أن الفيلا الخاصة بك هي واجهة مشرفة لك، لذا نقدم خدمات <strong>ترميم فلل بالرياض</strong> بأعلى مستويات الدقة والاحترافية. سواء كنت ترغب في تحديث التصميم الداخلي، توسيع الغرف، أو إعادة هيكلة الواجهات الخارجية، فإن فريقنا الهندسي يضمن لك تحويل فيلتك إلى تحفة معمارية عصرية.</p>
+                    <p>تشمل خدماتنا:</p>
+                    <ul>
+                        <li>هدم وإعادة بناء الجدران (تعديل التقسيمات).</li>
