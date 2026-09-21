@@ -25,32 +25,33 @@
             background-color: var(--bg-light);
             color: var(--text-color);
             line-height: 1.8;
+            padding-bottom: 80px; /* مساحة للأزرار العائمة */
         }
         /* الهيدر */
         header {
-            /* تم وضع رابط لصورة معمارية خارجية كصورة غلاف */
             background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1400&auto=format&fit=crop') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px;
         }
         /* الشعار: صورة معمارية تحتوي على الرقم */
         .logo-img {
-            width: 180px;
+            width: 160px;
             height: auto;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             border-radius: 8px;
-            /* border: 2px solid white; */
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         header h1 {
-            font-size: 2.6rem;
-            margin-bottom: 15px;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         header p {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             max-width: 700px;
-            margin: 0 auto 25px auto;
+            margin: 0 auto 20px auto;
         }
         .btn-main {
             background-color: var(--accent-color);
@@ -70,12 +71,12 @@
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
         .section {
             background: white;
-            margin-bottom: 30px;
-            padding: 30px;
+            margin-bottom: 25px;
+            padding: 25px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
@@ -84,16 +85,17 @@
             margin-bottom: 15px;
             border-right: 4px solid var(--accent-color);
             padding-right: 10px;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
         }
         .section p {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #475569;
+            font-size: 0.95rem;
         }
-        /* تنسيق الصور داخل الأقسام - روابط خارجية */
+        /* تنسيق الصور داخل الأقسام */
         .section-img {
             width: 100%;
-            height: 300px;
+            height: 250px;
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 15px;
@@ -102,7 +104,7 @@
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 15px;
             margin-top: 20px;
         }
         .feature-box {
@@ -120,49 +122,52 @@
         .faq-item {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
-            padding: 15px 20px;
+            padding: 15px;
             border-radius: 8px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         .faq-item h3 {
             color: var(--primary-color);
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
         }
 
-        /* الأزرار العائمة */
-        @keyframes pulse-green {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
-            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        /* الأزرار العائمة - تم إصلاحها وإظهارها */
+        @keyframes arousing {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-        .floating-btn {
+        .float-btn {
             position: fixed;
-            bottom: 30px;
-            width: 60px;
-            height: 60px;
+            bottom: 25px;
+            width: 65px;
+            height: 65px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            z-index: 9999; /* ضمان ظهورها فوق كل شيء */
             transition: transform 0.3s;
+            animation: arousing 2s infinite;
         }
-        .floating-btn:hover {
+        .float-btn:hover {
             transform: scale(1.1);
         }
         /* واتساب على اليمين */
         .float-whatsapp {
-            right: 30px;
+            right: 25px;
             background-color: var(--whatsapp-color);
             color: white;
-            animation: pulse-green 2s infinite;
         }
         /* اتصال على اليسار */
         .float-call {
-            left: 30px;
+            left: 25px;
             background-color: var(--call-color);
             color: white;
         }
@@ -171,8 +176,8 @@
             background-color: var(--primary-color);
             color: white;
             text-align: center;
-            padding: 30px;
-            margin-top: 50px;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -180,8 +185,8 @@
 
     <!-- رأس الصفحة -->
     <header>
-        <!-- تم استبدال الصورة الشخصية بصورة شعار/تصميم معماري يحتوي على الرقم -->
-        <img src="https://i.imgur.com/311L9bY.png" alt="مقاول ترميم بالرياض" class="logo-img">
+        <!-- الشعار: صورة معمارية تحتوي على الرقم -->
+        <img src="https://i.imgur.com/311L9bY.png" alt="مقاول ترميم بالرياض 0580586124" class="logo-img">
         <h1>مقاول ترميم بالرياض - شركة بناء وتشطيب</h1>
         <p>أفضل خدمات ترميم الفلل، الشقق، وعزل الأسطح بأحدث التقنيات وبإشراف هندسي معتمد.</p>
         <a href="tel:0580586124" class="btn-main">اتصل بنا الآن: 0580586124</a>
@@ -195,7 +200,8 @@
             <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop" alt="ترميم مباني الرياض" class="section-img">
             <p>نحن مؤسسة رائدة متخصصة في أعمال <strong>الترميم والتشطيب بالرياض</strong>، بخبرة تتجاوز 10 سنوات في إعادة إحياء المباني القديمة والحديثة. نقدم حلولاً هندسية متكاملة لكافة المشاكل الإنشائية.</p>
             <p>فريقنا الفني والهندسي يعمل جاهداً لتقديم أعلى معايير الجودة في التنفيذ، بدءاً من المعاينة الدقيقة ووضع التصاميم، مروراً بمراحل التنفيذ المختلفة، وحتى التسليم النهائي مع ضمان شامل.</p>
-            <p>هدفنا هو كسب ثقة عملائنا من خلال الالتزام بالمواعيد، الدقة في العمل، والأسعار التنافسية التي تناسب الجميع في مدينة الرياض.</p>
+            <p>هدفنا هو كسب ثقة عملائنا من خلال الالتزام بالمواعيد، الدقة في العمل، والأسعار التنافسية التي تناسب الجميع في مدينة الرياض. لا تتردد في طلب استشارتك المجانية.</p>
+            <p>نحن نستخدم أجود مواد البناء والعزل المعتمدة من قبل الجهات الرسمية في المملكة لضمان بقاء الترميم لسنوات طويلة دون أي مشاكل.</p>
         </section>
 
         <!-- القسم 2 -->
@@ -204,7 +210,8 @@
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" alt="ترميم فلل الرياض" class="section-img">
             <p>نقدم خدمات متخصصة في <strong>ترميم الفلل بالرياض</strong> والقصور، تشمل معالجة التصدعات، تجديد الواجهات الخارجية، وإعادة تقسيم الفراحات الداخلية لتلبية احتياجات العصر الحديث.</p>
             <p>نقوم بفك وإعادة تركيب الأرضيات، أعمال اللياسة، والدهانات بأجود الأنواع. كما نضمن سلامة الهيكل الإنشائي للمبنى بعد الترميم ليعيش لسنوات طويلة إضافية.</p>
-            <p>نعمل بإشراف هندسي كامل لضمان مطابقة الأعمال للمواصفات الفنية والهندسية المعتمدة في المملكة العربية السعودية.</p>
+            <p>نعمل بإشراف هندسي كامل لضمان مطابقة الأعمال للمواصفات الفنية والهندسية المعتمدة في المملكة العربية السعودية. فريقنا مدرب على التعامل مع أفخم أنواع التشطيبات.</p>
+            <p>سواء كنت ترغب في تحديث فيلا بالكامل أو إجراء تعديلات جزئية، فإننا نقدم الحلول الأنسب لميزانيتك ورغبتك.</p>
         </section>
 
         <!-- القسم 3 -->
@@ -213,7 +220,8 @@
             <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop" alt="تشطيب شقق الرياض" class="section-img">
             <p>نتميز في أعمال <strong>التشطيب بالرياض</strong> للشقق السكنية، المكاتب، والمحلات التجارية. بدءاً من أعمال الجبس بورد، الأسقف المستعارة، الإضاءات الحديثة، وحتى الأرضيات والدهانات.</p>
             <p>نوفر كتالوجات لأحدث صيحات الديكور العالمية وننفذها بدقة متناهية. كما نقوم بتركيب الأبواب والنوافذ والألمنيوم بجودة عالية.</p>
-            <p>سواء كنت تبحث عن تشطيب كلاسيكي أو مودرن، فإن فريقنا مستعد لتحويل رؤيتك إلى واقع ملموس بأفضل الأسعار.</p>
+            <p>سواء كنت تبحث عن تشطيب كلاسيكي أو مودرن، فإن فريقنا مستعد لتحويل رؤيتك إلى واقع ملموس بأفضل الأسعار. نضمن لك استخدام دهانات صديقة للبيئة وعالية التحمل.</p>
+            <p>التشطيب هو واجهة عقارك، ونحن نحرص على أن تكون هذه الواجهة مشرفة ومبهرة لكل من يراها.</p>
         </section>
 
         <!-- القسم 4 -->
@@ -222,7 +230,8 @@
             <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop" alt="عزل أسطح الرياض" class="section-img">
             <p>نقدم حلولاً فعالة لمشاكل تسربات المياه في <strong>عزل الأسطح بالرياض</strong>، باستخدام أفضل مواد العزل المائي والحراري (مثل الفوم والرولات البيتومينية) لحماية المبنى من الأمطار وحرارة الشمس.</p>
             <p>كما نقوم بـ <strong>عزل خزانات المياه</strong> الأرضية والعلوية لضمان سلامة ونقاء المياه ومنع التسربات التي قد تضر بأساسات المنزل.</p>
-            <p>نقدم ضمانات موثوقة على كافة أعمال العزل لضمان راحة بالك وحماية عقارك لسنوات طويلة.</p>
+            <p>نقدم ضمانات موثوقة على كافة أعمال العزل لضمان راحة بالك وحماية عقارك لسنوات طويلة. فريقنا يستخدم أحدث أجهزة كشف التسربات.</p>
+            <p>لا تتهاون في مشكلة التسربات، فهي قد تدمر أساسات المبنى. اتصل بنا فوراً للحصول على حل جذري.</p>
         </section>
 
         <!-- القسم 5 -->
@@ -231,33 +240,12 @@
             <img src="https://images.unsplash.com/photo-1581094482909-5c4f723a9845?q=80&w=1000&auto=format&fit=crop" alt="معالجة الشروخ الرياض" class="section-img">
             <p>تعتبر الشروخ والتصدعات من أخطر المشاكل التي تهدد سلامة المباني. نستخدم في شركتنا أفضل التقنيات لـ <strong>معالجة الشروخ الإنشائية والشعرية بالرياض</strong>.</p>
             <p>يقوم مهندسونا بتحديد نوع الشرخ وسببه، ثم اختيار طريقة المعالجة المناسبة (مثل الحقن بمواد الإيبوكسي أو استخدام الألياف الكربونية) لاستعادة القوة الإنشائية للمبنى.</p>
-            <p>لا تتردد في الاتصال بنا عند ملاحظة أي تشققات في الجدران أو الأسقف للحصول على استشارة فورية وحل جذري للمشكلة.</p>
+            <p>لا تتردد في الاتصال بنا عند ملاحظة أي تشققات في الجدران أو الأسقف للحصول على استشارة فورية وحل جذري للمشكلة قبل تفاقمها.</p>
+            <p>معالجة الشروخ تتطلب خبرة ودقة، ونحن نوفر لك أفضل المهندسين والفنيين لهذا الغرض.</p>
         </section>
 
         <!-- القسم 6 -->
         <section class="section" id="section6">
             <h2>6. تجديد السباكة والكهرباء</h2>
             <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop" alt="سباكة وكهرباء الرياض" class="section-img">
-            <p>نقوم بـ <strong>تجديد شبكات السباكة والكهرباء بالرياض</strong> للمباني القديمة، حيث يتم استبدال المواسير التالفة بأخرى حرارية، وتحديث التمديدات الكهربائية لتتحمل الأحمال الحديثة.</p>
-            <p>نستخدم أجود أنواع الخامات المعتمدة ونعمل على توفير حلول آمنة ومطابقة لكود البناء السعودي لتجنب أي مشاكل مستقبلية.</p>
-            <p>يتم العمل تحت إشراف فنيين متخصصين لضمان جودة التأسيس والتمديد لكافة نقاط المياه والكهرباء.</p>
-        </section>
-
-        <!-- القسم 7 -->
-        <section class="section" id="section7">
-            <h2>7. لماذا تختارنا كأفضل مقاول ترميم؟</h2>
-            <div class="features-grid">
-                <div class="feature-box">
-                    <i class="fas fa-user-tie"></i>
-                    <h3>فريق هندسي متخصص</h3>
-                    <p>إشراف هندسي كامل على كافة مراحل العمل لضمان الجودة والدقة.</p>
-                </div>
-                <div class="feature-box">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>ضمانات حقيقية</h3>
-                    <p>نقدم ضمانات مكتوبة وموثوقة على كافة أعمال الترميم والعزل والتشطيب.</p>
-                </div>
-                <div class="feature-box">
-                    <i class="fas fa-dollar-sign"></i>
-                    <h3>أسعار تنافسية</h3>
-                    <p>أفضل الأسعار في الرياض مقابل
+            <p>نقوم بـ <strong>تجديد شبكات السباكة والكهرباء بالرياض</strong> للمباني القديمة والحديث
