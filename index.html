@@ -1,183 +1,105 @@
+ثواني أجهزلك الكود في مربع النسخ المباشر عشان تقدر تنسخه على طول. تفضل الكود في مربع جاهز للنسخ:
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مقاول ترميم وتشطيب بالرياض | أفضل خدمات المقاولات</title>
+    <title>صفحة احترافية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #27ae60;
-            --secondary-color: #2c3e50;
-            --text-color: #333;
-            --light-bg: #f9f9f9;
             --whatsapp-color: #25d366;
+            --call-color: #007bff;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        header {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #f4f4f4;
             text-align: center;
-        }
-        section {
-            padding: 2rem;
-            border-bottom: 1px solid #ddd;
         }
         .container {
-            max-width: 1200px;
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 2rem;
+            color: #666;
+            max-width: 800px;
             margin: 0 auto;
+            line-height: 1.6;
         }
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .floating-btn {
+        /* زر الواتساب */
+        .whatsapp-btn {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
+            bottom: 30px;
+            left: 30px;
+            background-color: var(--whatsapp-color);
+            color: white;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            text-align: center;
-            line-height: 50px;
-            color: #fff;
-            font-size: 24px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: transform 0.3s ease;
             z-index: 1000;
         }
-        .whatsapp-btn {
-            background-color: var(--whatsapp-color);
-            bottom: 80px;
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
         }
+        /* زر الاتصال */
         .call-btn {
-            background-color: var(--primary-color);
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--call-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 1000;
+            animation: vibrate 2s infinite ease-in-out;
         }
-        footer {
-            background-color: var(--secondary-color);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
+        @keyframes vibrate {
+            0%, 100% { transform: translate(0, 0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>مقاول ترميم وتشطيب بالرياض</h1>
-</header>
-
-<section id="home">
     <div class="container">
-        <h2>أفضل مقاول ترميم وتشطيب في الرياض</h2>
-        <p>نقدم خدمات ترميم وتشطيب المباني بأعلى جودة وأفضل الأسعار في الرياض. خبرة سنوات في معالجة التشققات، دهانات، سباكة، وكهرباء.</p>
-        <a href="tel:+966580586124" class="btn">اتصل الآن: 0580586124</a>
+        <h1>أهلاً بك في موقعنا المميز</h1>
+        <p class="description">
+            نقدم لك أفضل الخدمات والحلول المتكاملة التي تلبي احتياجاتك بكل احترافية وجودة عالية. 
+            فريق عملنا جاهز دائماً لدعمك وضمان نجاح مشروعك.
+        </p>
     </div>
-</section>
 
-<section id="about">
-    <div class="container">
-        <h2>من نحن</h2>
-        <p>مؤسستنا متخصص في أعمال المقاولات العامة، الترميم، والتشطيب الداخلي والخارجي. نلتزم بالدقة والجودة العالية في التنفيذ.</p>
-    </div>
-</section>
-
-<section id="services">
-    <div class="container">
-        <h2>خدماتنا المتكاملة</h2>
-        <ul>
-            <li>ترميم المنازل والفلل بالرياض.</li>
-            <li>أعمال التشطيب الداخلي والخارجي.</li>
-            <li>معالجة الشروخ والتصدعات في الجدران.</li>
-            <li>تجديد وصيانة شبكات السباكة والكهرباء.</li>
-            <li>دهانات وديكورات حديثة.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="why-us">
-    <div class="container">
-        <h2>لماذا تختارنا؟</h2>
-        <p>لأننا نضمن لك الدقة في المواعيد، استخدام أجود المواد، وفريق عمل مدرب على أعلى مستوى لإنجاز أعمالك بسرعة واحترافية.</p>
-    </div>
-</section>
-
-<section id="gallery">
-    <div class="container">
-        <h2>معرض الأعمال</h2>
-        <p>هنا يمكنك إضافة صور المشاريع السابقة لتوضيح جودة أعمالنا في الترميم والتشطيب.</p>
-    </div>
-</section>
-
-<section id="steps">
-    <div class="container">
-        <h2>خطوات العمل</h2>
-        <ol>
-            <li>المعاينة الأولية وتقييم حالة المبنى.</li>
-            <li>إعداد خطة الترميم والتشطيب المطلوبة.</li>
-            <li>البدء في التنفيذ مع المتابعة المستمرة.</li>
-            <li>التسليم النهائي وضمان الجودة.</li>
-        </ol>
-    </div>
-</section>
-
-<section id="faq">
-    <div class="container">
-        <h2>الأسئلة الشائعة</h2>
-        <div>
-            <h3>ما الفرق بين الترميم والتشطيب؟</h3>
-            <p>الترميم يهدف لإصلاح العيوب والتلفيات، بينما التشطيب يركز على المظهر الداخلي والديكورات.</p>
-        </div>
-        <div>
-            <h3>كم يستغرق ترميم المنزل؟</h3>
-            <p>يعتمد الوقت على حجم ونوع الأعمال المطلوبة للمبنى.</p>
-        </div>
-    </div>
-</section>
-
-<section id="tips">
-    <div class="container">
-        <h2>نصائح الصيانة والترميم</h2>
-        <p>ننصح بالفحص الدوري للمباني لمعالجة التشققات وتسربات المياه مبكراً قبل تفاقمها.</p>
-    </div>
-</section>
-
-<section id="value">
-    <div class="container">
-        <h2>أهمية ترميم المباني</h2>
-        <p>يساعد الترميم في الحفاظ على سلامة المبنى وزيادة قيمته العقارية.</p>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2>تواصل معنا</h2>
-        <p>للحصول على استشارة أو طلب خدمة، لا تردد في الاتصال بنا.</p>
-        <p>هاتف: <a href="tel:+966580586124">0580586124</a></p>
-        <a href="tel:+966580586124" class="btn">اتصل الآن</a>
-    </div>
-</section>
-
-<footer>
-    <p>جميع الحقوق محفوظة للمقاول بالرياض</p>
-</footer>
-
-<a href="https://wa.me/966580586124" class="floating-btn whatsapp-btn" target="_blank" title="تواصل عبر واتساب">
-    💬
-</a>
-<a href="tel:+966580586124" class="floating-btn call-btn" title="اتصل الآن">
-    📞
-</a>
-
+    <!-- أزرار التواصل -->
+    <a href="https://wa.me/your_number" class="whatsapp-btn" target="_blank" aria-label="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="tel:your_number" class="call-btn" aria-label="اتصل بنا">
+        <i class="fas fa-phone-alt"></i>
+    </a>
 </body>
 </html>
+
